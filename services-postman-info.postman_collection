@@ -1,0 +1,430 @@
+{
+	"info": {
+		"_postman_id": "94888c2b-6e3a-4e08-a96d-cf62147b00de",
+		"name": "new-app",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get specializations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/specialization",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"specialization"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get specializations",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/specialization",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"specialization"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1532"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"5fc-gYywXW/7CUJSGHEbuo9CMJAx/q0\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Jun 2021 09:28:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"specialization_id\": \"1\",\n        \"specialization_name\": \"Angular\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"2\",\n        \"specialization_name\": \"NodeJS\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"3\",\n        \"specialization_name\": \"ASP.Net\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"4\",\n        \"specialization_name\": \"Web API\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"5\",\n        \"specialization_name\": \"Knockout\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"6\",\n        \"specialization_name\": \"SharePoint\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"7\",\n        \"specialization_name\": \"React.js\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"8\",\n        \"specialization_name\": \"MongoDB\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"9\",\n        \"specialization_name\": \"PostgresSQL\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"10\",\n        \"specialization_name\": \"Spring boot\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    },\n    {\n        \"specialization_id\": \"11\",\n        \"specialization_name\": \"Django\",\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "save associates",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"associate_name\":\"Steve Waugh\",\r\n\"phone\":\"+31 *******\",\r\n\"address_val\":\"No 1 LIG-1, 5th street, Madhavaram,Chennai-51\",\r\n\"specialization\":[\r\n     {\r\n        \"specialization_id\": \"1\",\r\n        \"specialization_name\": \"Angular\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    },\r\n    {\r\n        \"specialization_id\": \"2\",\r\n        \"specialization_name\": \"NodeJS\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    }\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/associates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"associates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "save associates",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"associate_name\":\"Steve Waugh\",\r\n\"phone\":\"+31 *******\",\r\n\"address_val\":\"No 1 LIG-1, 5th street, Madhavaram,Chennai-51\",\r\n\"specialization\":[\r\n     {\r\n        \"specialization_id\": \"1\",\r\n        \"specialization_name\": \"Angular\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    },\r\n    {\r\n        \"specialization_id\": \"2\",\r\n        \"specialization_name\": \"NodeJS\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    }\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/associates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"associates"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "585"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"249-2gvi8V23r1lVLezi3lXWNcAVN4o\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Jun 2021 13:04:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Associate saved successfully\",\n    \"associate\": {\n        \"associate_id\": \"2\",\n        \"associate_name\": \"Steve Waugh\",\n        \"phone\": \"+31 *******\",\n        \"address_val\": \"No 1 LIG-1, 5th street, Madhavaram,Chennai-51\",\n        \"is_active\": true,\n        \"created_at\": \"2021-06-23T13:04:51.820Z\",\n        \"updated_at\": \"2021-06-23T13:04:51.820Z\"\n    },\n    \"associate_spec_Bridge\": [\n        [\n            {\n                \"id\": \"3\",\n                \"associate_id\": \"2\",\n                \"specialization_id\": \"1\",\n                \"created_at\": \"2021-06-23T13:04:52.048Z\",\n                \"updated_at\": \"2021-06-23T13:04:52.048Z\"\n            }\n        ],\n        [\n            {\n                \"id\": \"4\",\n                \"associate_id\": \"2\",\n                \"specialization_id\": \"2\",\n                \"created_at\": \"2021-06-23T13:04:52.166Z\",\n                \"updated_at\": \"2021-06-23T13:04:52.166Z\"\n            }\n        ]\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "get associates",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/associates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"associates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get associates",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/associates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"associates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "375"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"177-xmcPs0NkwvSnncxcu6+xSoEasp8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Jun 2021 14:14:56 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"associate_id\": \"1\",\n        \"associate_name\": \"John Bein\",\n        \"specialization\": [\n            {\n                \"specialization_name\": \"Angular\",\n                \"specialization_id\": \"1\"\n            },\n            {\n                \"specialization_name\": \"NodeJS\",\n                \"specialization_id\": \"2\"\n            }\n        ]\n    },\n    {\n        \"associate_id\": \"2\",\n        \"associate_name\": \"Steve Waugh\",\n        \"specialization\": [\n            {\n                \"specialization_name\": \"Angular\",\n                \"specialization_id\": \"1\"\n            },\n            {\n                \"specialization_name\": \"SharePoint\",\n                \"specialization_id\": \"6\"\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "delete associate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"id\":\"2\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/associates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"associates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "delete associate",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"2\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/associates",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"associates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-JYinMiG3x5CaekrOCupMVsiJMkQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Jun 2021 13:43:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Associate deleted successfully\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update associate",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"associate_name\":\"Steve Waugh\",\r\n\"phone\":\"+31 *******\",\r\n\"address_val\":\"No 1 LIG-1, 5th street, Madhavaram,Chennai-51\",\r\n\"associate_id\":\"2\",\r\n\"specialization\":[\r\n     {\r\n        \"specialization_id\": \"1\",\r\n        \"specialization_name\": \"Angular\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    },\r\n    {\r\n        \"specialization_id\": \"6\",\r\n        \"specialization_name\": \"SharePoint\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    }\r\n]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/associates/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"associates",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update associate",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"associate_name\":\"Steve Waugh\",\r\n\"phone\":\"+31 *******\",\r\n\"address_val\":\"No 1 LIG-1, 5th street, Madhavaram,Chennai-51\",\r\n\"associate_id\":\"2\",\r\n\"specialization\":[\r\n     {\r\n        \"specialization_id\": \"1\",\r\n        \"specialization_name\": \"Angular\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    },\r\n    {\r\n        \"specialization_id\": \"6\",\r\n        \"specialization_name\": \"SharePoint\",\r\n        \"created_at\": \"2021-06-23T09:28:46.870Z\",\r\n        \"updated_at\": \"2021-06-23T09:28:46.870Z\"\r\n    }\r\n]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/associates/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"associates",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "44"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2c-wSkbns3ZpbLw05YjgsijKy3gjd8\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 23 Jun 2021 14:01:31 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Associate updated successfully\"\n}"
+				}
+			]
+		}
+	]
+}
